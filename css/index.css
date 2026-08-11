@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcf7f4;
+}
+
+nav{
+    background-color: #688d92;
+    padding: 10px;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+nav li {
+    border-right: 1px solid #ffffff;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Montserrat", system-ui;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+nav li:hover {
+    border-right-color: #b42828;
+}
+
+nav li:hover a {
+    color: #b42828;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: "Playfair Display", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #688d92;
+    flex-basis: 100%;
+    height: 100px;
+    padding: 30px;
+    margin: 0;
+}
+
+section {
+    flex: 1;
+    padding: 0px;
+    border: 1px solid #d4671e;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+section h2 {
+    font-family: "Smooch Sans", system-ui;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #688d92;
+}
+
+section p, section ul{
+    font-family: "Montserrat", system-ui;
+    color: #000000;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+#About p{
+    padding: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#Experience ul, #Connect ul{
+    list-style-type: none;
+}
+
+#Experience li{
+    display: block; 
+    background-color: #c5defc;
+    border-left: 15px solid #0076ff;
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin: 0 10px 12px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#Connect li{
+    margin-bottom: 12px;
+}
+
+#Connect a {
+  text-decoration: none;
+  color: #0076ff;
+  font-weight: 500;
+}
+
+#Connect i {
+  margin-right: 8px;
+  font-size: 30px;
+}
+
+#Skills, #Projects{
+    flex: 100%;
+}
