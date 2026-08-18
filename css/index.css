@@ -99,7 +99,7 @@ section p, section ul{
     font-size: 18px;
 }
 
-#Experience ul, #Connect ul{
+#Experience ul, #Connect ul, #Skills ul{
     list-style-type: none;
 }
 
@@ -121,6 +121,7 @@ section p, section ul{
   text-decoration: none;
   color: #0076ff;
   font-weight: 500;
+  transition: color 0.5s ease;
 }
 
 #Connect i {
@@ -128,6 +129,31 @@ section p, section ul{
   font-size: 30px;
 }
 
+#Connect a:hover {
+    color: #000000
+}
+
 #Skills, #Projects{
     flex: 100%;
 }
+
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#Skills li {
+    border: 1px solid #6083aa;
+    border-radius: 4px;
+    padding: 50px;
+    width: 30%;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#Skills li:hover {
+    background-color: #6083aa;
+    color: #ffffff; 
+} 
