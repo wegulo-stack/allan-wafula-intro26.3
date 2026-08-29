@@ -133,7 +133,7 @@ section p, section ul{
     color: #000000
 }
 
-#Skills, #Projects{
+#Skills, #Projects {
     flex: 100%;
 }
 
@@ -157,3 +157,135 @@ section p, section ul{
     background-color: #6083aa;
     color: #ffffff; 
 } 
+
+#LeaveMessage, #messages {
+    height: 450px;
+}
+
+#LeaveMessage form {
+    padding: 20px;
+    font-family: "Montserrat", system-ui;
+}
+
+#LeaveMessage label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#LeaveMessage input,
+#LeaveMessage textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6083aa;
+    border-radius: 4px;
+    font-family: "Montserrat", system-ui;
+}
+
+#LeaveMessage textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#LeaveMessage button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6083aa;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Montserrat", system-ui;
+}
+
+#LeaveMessage button:hover {
+    background-color: #688d92;
+}
+
+#messages {
+    overflow-y: auto;
+}
+
+#messages ul {
+    list-style: none;
+    padding: 20px;
+}
+
+#messages li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: "Montserrat", system-ui;
+    line-height: 1.5;
+}
+
+#messages a {
+    color: #0076ff;
+    font-weight: 500;
+}
+
+#messages span {
+    margin-left: 10px;
+}
+
+#messages button {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    border: none;
+    background-color: #b42828;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav li {
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    h1 {
+        height: auto;
+        padding: 25px 10px;
+        font-size: 32px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    section {
+        width: auto;
+        margin: 10px;
+    }
+
+    #Skills ul {
+        flex-direction: column;
+    }
+
+    #Skills li {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #Skills,
+    #Projects,
+    #LeaveMessage,
+    #messages {
+        flex: 100%;
+    }
+}
