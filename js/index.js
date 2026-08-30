@@ -43,3 +43,24 @@ messageForm.addEventListener("submit", function(event) {
 
     event.target.reset();    
 });
+
+let projectSection = document.querySelector("#Projects");
+let projectList = projectSection.querySelector("ul");
+fetch("https://api.github.com/users/wegulo-stack/repos")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Error fetching repositories");
+        }
+        return response.json();
+    })
+    .then(repositories => {
+        console.log(repositories);
+        for(let i = 0; i <repositories.length; i++) {
+            let project = document.createElement("li");
+            project.innerHTML = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.log(error.message);
+    })
