@@ -99,7 +99,7 @@ section p, section ul{
     font-size: 18px;
 }
 
-#Experience ul, #Connect ul, #Skills ul{
+#Experience ul, #Connect ul, #Skills ul, #Projects ul{
     list-style-type: none;
 }
 
@@ -154,6 +154,27 @@ section p, section ul{
 }
 
 #Skills li:hover {
+    background-color: #6083aa;
+    color: #ffffff; 
+} 
+
+#Projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#Projects li {
+    border-bottom: 4px solid #6083aa;
+    background-color: #e8e8f1;
+    padding: 50px;
+    width: 30%;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#Projects li:hover {
     background-color: #6083aa;
     color: #ffffff; 
 } 
@@ -273,11 +294,11 @@ section p, section ul{
         margin: 10px;
     }
 
-    #Skills ul {
+    #Skills ul, #Projects ul {
         flex-direction: column;
     }
 
-    #Skills li {
+    #Skills li, #Projects li {
         width: 100%;
         padding: 30px;
     }
