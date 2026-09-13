@@ -47,6 +47,10 @@ nav li:hover a {
     color: #b42828;
 }
 
+nav i {
+    padding: 5px;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
