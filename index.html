@@ -4,13 +4,16 @@
     <title>HTML Basics</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="css/index.css" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
   <body>
+    <!-- Navigation bar with links to different sections and the Open API page-->
     <nav>
       <ul>
         <li><a href="#About">About</a></li>
@@ -22,8 +25,10 @@
         <li><a href="open-api.html">Open API Sports</a></li>
       </ul>
     </nav>
+    <!-- Main content container -->
     <div class="flex-container">
       <h1>Allan Wafula</h1>
+      <!-- About section with a brief introduction -->
       <section id="About">
         <h2>About</h2>
         <p>
@@ -33,6 +38,7 @@
           frameworks.
         </p>
       </section>
+      <!-- Experience section -->
       <section id="Experience">
         <h2>Experience</h2>
         <ul>
@@ -41,6 +47,7 @@
           <li>CS class</li>
         </ul>
       </section>
+      <!-- Connect section with links to social media profiles -->
       <section id="Connect">
         <h2>Connect</h2>
         <ul>
@@ -62,18 +69,30 @@
               <i class="fa-brands fa-github"></i> GitHub
             </a>
           </li>
+          <li>
+            <a
+              href="mailto:allan.wafula@example.com"
+            >
+              <i class="fa fa-envelope"></i> Email
+            </a>
+          </li>
         </ul>
       </section>
+      <!-- Skills section -->
       <section id="Skills">
         <h2>Skills</h2>
+        <!-- Skills listed using javascript -->
         <ul></ul>
       </section>
+      <!-- Projects section -->
       <section id="Projects">
         <h2>Projects</h2>
+        <!-- List of my project repositories is generated from the GitHub API using javascript -->
         <ul>
 
         </ul>
       </section>
+      <!-- Leave a message section with a form for users to submit their name, email, and message -->
       <section id="LeaveMessage">
         <h2>Leave a message</h2>
         <form name="leave_message">
@@ -92,13 +111,16 @@
           <button type="submit">Submit</button>
         </form>
       </section>
+      <!-- Display messages submitted by users using javascript -->
       <section id="messages">
         <h2>Messages</h2>
+        <!-- Messages submitted by users will be displayed here -->
         <ul>
           
         </ul>
       </section>
     </div>
+    <!-- Link to the JavaScript file -->
     <script src="js/index.js"> </script>
   </body>
 </html>
