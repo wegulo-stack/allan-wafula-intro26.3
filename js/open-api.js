@@ -1,18 +1,23 @@
+// Create a Headers object to include the API key needed for the request
 const myHeaders = new Headers();
 myHeaders.append("x-apisports-key", "5a98dacb76d8a4785fdb22290c31e38b");
 
+// Set options for the GET request
 const requestOptions = {
   method: 'GET',
   headers: myHeaders,
   redirect: 'follow'
 };
 
+// Select the Football section and list elements for displaying API results
 const footballContainer = document.querySelector("#Football");
 const footballList = footballContainer.querySelector("ul");
 
+// Select the buttons for fetching leagues and teams
 const leaguesButton = document.querySelector("#leaguesButton");
 const teamsButton = document.querySelector("#teamsButton");
 
+// Add event listener for when the leagues button is clicked to fetch and display leagues
 leaguesButton.addEventListener("click", function () {
 
     fetch("https://v3.football.api-sports.io/leagues", requestOptions)
@@ -58,6 +63,7 @@ leaguesButton.addEventListener("click", function () {
         });
 });
 
+// Add event listener for when the teams button is clicked to fetch and display teams
 teamsButton.addEventListener("click", function () {
 
     fetch("https://v3.football.api-sports.io/teams?league=39&season=2024", requestOptions)
@@ -102,3 +108,14 @@ teamsButton.addEventListener("click", function () {
             console.error(error.message);
         });
 });
+
+// Create a footer element with a copyright notice and append it to the body
+const body = document.querySelector("body");
+const footerElement = document.createElement("footer");
+body.appendChild(footerElement);
+let today = new Date();
+let thisYear = today.getFullYear();
+let footer = document.querySelector("footer");
+let copyright = document.createElement("p");
+copyright.innerHTML = `&copy; Allan Wafula ${thisYear}`;
+footer.appendChild(copyright);

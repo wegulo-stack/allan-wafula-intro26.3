@@ -1,14 +1,19 @@
+/* Import Google Fonts for Montserrat, Playfair Display, and Smooch Sans */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+/* Include padding and borders in the total width and height of elements */
 * {
   box-sizing: border-box;
 }
 
+/* Reset default body spacing and set page background color */
 body {
     margin: 0;
     padding: 0;
     background-color: #fcf7f4;
 }
 
+/* Style the navigation bar and keep it visible while scrolling */
 nav{
     background-color: #688d92;
     padding: 10px;
@@ -18,6 +23,7 @@ nav{
     z-index: 1000;
 }
 
+/* Display navigation links using Flexbox */
 nav ul {
     display: flex;
     list-style-type: none;
@@ -27,11 +33,13 @@ nav ul {
     justify-content: flex-end;
 }
 
+/* Style individual navigation items */
 nav li {
     border-right: 1px solid #ffffff;
     padding: 15px;
 }
 
+/* Style navigation links */
 nav a {
     text-decoration: none;
     font-family: "Montserrat", system-ui;
@@ -39,18 +47,22 @@ nav a {
     color: #ffffff;
 }
 
+/* Change border color when hovering over a navigation item */
 nav li:hover {
     border-right-color: #b42828;
 }
 
+/* Change link color when hovering over a navigation item */
 nav li:hover a {
     color: #b42828;
 }
 
+/* Add spacing around navigation icons */
 nav i {
     padding: 5px;
 }
 
+/* Use Flexbox to arrange the main sections */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +83,7 @@ h1 {
     margin: 0;
 }
 
+/* Style each main content section */
 section {
     flex: 1;
     padding: 0px;
@@ -97,16 +110,19 @@ section p, section ul{
     margin: 10px 0;
 }
 
+/* Style the paragraph inside the About section */
 #About p{
     padding: 20px;
     font-weight: 300;
     font-size: 18px;
 }
 
+/* Remove bullet points from selected section lists */
 #Experience ul, #Connect ul, #Skills ul, #Projects ul{
     list-style-type: none;
 }
 
+/* Style each experience item as a card */
 #Experience li{
     display: block; 
     background-color: #c5defc;
@@ -117,10 +133,12 @@ section p, section ul{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Style each connect item with spacing */
 #Connect li{
     margin-bottom: 12px;
 }
 
+/* Style the links in the Connect section */
 #Connect a {
   text-decoration: none;
   color: #0076ff;
@@ -128,19 +146,23 @@ section p, section ul{
   transition: color 0.5s ease;
 }
 
+/* Add spacing and size to the icons in the Connect section */
 #Connect i {
   margin-right: 8px;
   font-size: 30px;
 }
 
+/* Change link color when hovering over a connect item */
 #Connect a:hover {
     color: #000000
 }
 
+/* Style the Skills and Projects sections to take full width */
 #Skills, #Projects {
     flex: 100%;
 }
 
+/* Display skill items using Flexbox */
 #Skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -162,6 +184,7 @@ section p, section ul{
     color: #ffffff; 
 } 
 
+/* Display project items using Flexbox */
 #Projects ul {
     display: flex;
     flex-wrap: wrap;
@@ -183,21 +206,25 @@ section p, section ul{
     color: #ffffff; 
 } 
 
+/* Give both message-related sections the same height */
 #LeaveMessage, #messages {
     height: 450px;
 }
 
+/* Style the message form */
 #LeaveMessage form {
     padding: 20px;
     font-family: "Montserrat", system-ui;
 }
 
+/* Display form labels on separate lines */
 #LeaveMessage label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
 }
 
+/* Style form inputs and textarea */
 #LeaveMessage input,
 #LeaveMessage textarea {
     width: 100%;
@@ -208,11 +235,13 @@ section p, section ul{
     font-family: "Montserrat", system-ui;
 }
 
+/* Set textarea height and allow vertical resizing */
 #LeaveMessage textarea {
     min-height: 120px;
     resize: vertical;
 }
 
+/* Style the form submit button */
 #LeaveMessage button {
     padding: 10px 20px;
     border: none;
@@ -227,15 +256,18 @@ section p, section ul{
     background-color: #688d92;
 }
 
+/* Allow the messages section to scroll when content becomes too long */
 #messages {
     overflow-y: auto;
 }
 
+/* Remove bullets and add spacing to the messages list */
 #messages ul {
     list-style: none;
     padding: 20px;
 }
 
+/* Style individual submitted messages */
 #messages li {
     padding: 15px;
     margin-bottom: 10px;
@@ -244,15 +276,18 @@ section p, section ul{
     line-height: 1.5;
 }
 
+/* Style links inside submitted messages */
 #messages a {
     color: #0076ff;
     font-weight: 500;
 }
 
+/* Add spacing around additional message content */
 #messages span {
     margin-left: 10px;
 }
 
+/* Style the remove button for each message */
 #messages button {
     display: block;
     margin-top: 15px;
@@ -265,6 +300,7 @@ section p, section ul{
     cursor: pointer;
 }
 
+/* Adjust layout for tablets and smaller screens */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;

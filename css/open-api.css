@@ -1,13 +1,18 @@
+/* Import Google Fonts for Montserrat, Playfair Display, and Smooch Sans */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+/* Reset box-sizing for all elements to border-box */
 * {
   box-sizing: border-box;
 }
 
+/* Set default styles for the body element */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Set the style for the navigation bar */
 nav{
     background-color: #688d92;
     padding: 10px;
@@ -17,6 +22,7 @@ nav{
     z-index: 1000;
 }
 
+/* Set the style for the navigation list */
 nav ul {
     display: flex;
     list-style-type: none;
@@ -31,13 +37,6 @@ nav li {
     padding: 15px;
 }
 
-nav a {
-    text-decoration: none;
-    font-family: "Montserrat", system-ui;
-    font-weight: 300;
-    color: #ffffff;
-}
-
 nav li:hover {
     border-right-color: #b42828;
 }
@@ -50,6 +49,15 @@ nav i {
     padding: 5px;
 }
 
+/* Set the style for the navigation links */
+nav a {
+    text-decoration: none;
+    font-family: "Montserrat", system-ui;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", system-ui;
     flex-basis: 100%;
@@ -72,6 +80,7 @@ h3 a {
     font-style: italic;
 }
 
+/* Style for the button container and buttons */
 .button-container {
     display: flex;
     gap: 10px;
@@ -94,6 +103,7 @@ h3 a {
     background-color: #104d33;
 }
 
+/* Style for the Football section and its list items */
 #Football ul {
     list-style-type: none;
     padding: 20px;
@@ -115,6 +125,7 @@ h3 a {
     margin: 10px;
 }
 
+/* Style for the league and team images and descriptions */
 .leagueImage, .leagueDescription, .teamImage, .teamDescription {
     flex-basis: 50%;
 }
